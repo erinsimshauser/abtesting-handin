@@ -38,7 +38,6 @@ li {
 }
 
 .section {
-    padding: 2%;
     padding-right: 5%;
     padding-left: 5%;
 }
@@ -72,23 +71,13 @@ img.sketch {
   flex: 50%;
 }
 
-.column-proto {
-    flex: 2 1;
-}
-
-.guide2{
-    width: 95%;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
 .guide {
     width: 90%;
     padding: 5%;
 }
 
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
     .row{
         flex-wrap: wrap;
     }

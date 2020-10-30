@@ -23,6 +23,7 @@
     </div>
     <div class='section'>
       <h1>Websites Tested</h1>
+      <p>View the website <a href="https://calm-ravine-88425.herokuapp.com/">here</a>. Refresh to see the different versions!</p>
       <div class="row">
         <div class="col">
           <img src="Screen Shot 2020-10-30 at 2.03.46 AM.png" alt="Cacti purchasing website" class="guide">
@@ -31,30 +32,64 @@
           <img src="Screen Shot 2020-10-30 at 2.03.29 AM.png" alt="Cactus purchasing website" class="guide">
         </div>
       </div>
+      <h2>Key Changes</h2>
+      <ul>
+        <li>Image size is bigger on B</li>
+        <li>Cacti are orderd by descending price on B rather than ascending price on A</li>
+        <li>Button text color and cart match the visual design (color) on B</li>
+      </ul>
     </div>
     <div class='section'>
       <h1>Hypotheses</h1>
+      <h2>Time to Completion</h2>
+      <p>Time to completion defined as how long it took a user to put $150 worth of cacti into their cart</p>
+      <ul>
+        <li><b>Null Hypothesis:</b> There is no difference in time to completion between version A and version B</li>
+        <li><b>Alternative Hypothesis:</b> Version B will have a shorter time to completion because the cacti are orderd from high to low price which will make it easier to spend more compared to version A</li>
+      </ul>
+      <h2>Return Rate</h2>
+      <p>Return rate defined as whether or not a user returned to the shopping screen after the checkout screen</p>
+      <ul>
+        <li><b>Null Hypothesis:</b> There is no difference in return rate between version A and version B</li>
+        <li><b>Alternative Hypothesis:</b>There will be a difference in return rate between version A and version B because version B is more visually appealing and inviting with larger image size and more consistent visual design</li>
+      </ul>
       <!-- For each metric, write a set of hypotheses (null and alternative hypotheses), 
         making sure to include your reasoning behind the alternative hypotheses.
          The reasoning should relate to the changes you made. -->
     </div>
     <div class='section'>
       <h1>Data collection</h1>
-      <!-- To collect data, you will send this link to your peers for data collection. 
-        Your Heroku link will randomly select interface A or B for users to complete. 
-        Regardless of which version a user gets, their task should be to fill their cart with at least $150 of cacti/succulents. 
-        If you so choose, you may also collect data from people who are not in CS1300 (you can send your Heroku link to others, and they can complete the task). 
-        Describe your data collection process in 2-3 sentences. -->
+      <p>I sent my website to peers in my UI/UX class. Each person was tasked with putting $150 worth of cacti into
+        their cart. Users did not know which version of the website they were getting and both versions had the same task to perform.
+        I then downloaded the raw data from Heroku and extrapolated my desired metrics from analyzing the log times and page loads.
+      </p>
     </div>
     <div class='section'>
       <h1>Results</h1>
+      <p>I created and ran python scripts on my data to perfrom an independent sample t-test for time to completion
+        and a chi squared test for return rate. I have summarized the revelant findings and results in an infographic below.
+      </p>
       <img src="infographic.png" alt="infographic displaying results" class='guide'>
     </div>
     <div class='section'>
       <h1>Takeaways</h1>
-      <!-- Then, in 2-4 bullet points, describe your broad takeaways on general A/B testing from this assignment. These are some points that may be good to address:
-What limitations do you think affected the results of your test?
-What do your results tell us about design principles in general (think affordances, navigation, etc.)? -->
+      <h2>General</h2>
+      <ul>
+        <li>I learned about the value of statistics in evaluating UI decisions. Even though 
+          my average time to completions were different, they were not statistically significantly different.
+        </li>
+        <li>I would like to perform more A/B testing in the future, especially on a website/app used in real life</li>
+      </ul>
+      <h2>Limitations</h2>
+      <ul>
+        <li>I only had data from 24 users total, which may not have been a large enough sample size to formulate results</li>
+      </ul>
+      <h2>Design Principles</h2>
+      <ul>
+        <li>It is important to have a consistent visual design style (such as color) because this can result in
+          a statistically significant difference in the percentage of users who want to return to your site
+        </li>
+      </ul>
 
     </div>
   </body>
