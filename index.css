@@ -1,1 +1,96 @@
-/* Put your style information here! */
+body {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+a {
+    color: #456891;
+}
+
+h1 {
+    font-size: 28px;
+    padding-top: 2%;
+    font-family: 'Poppins', sans-serif;
+ }
+
+ h2 {
+     font-size: 18px;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ h3 {
+     color: #008091;
+     font-size: 38px;
+     padding-top: 2%;
+     font-family: 'Poppins', sans-serif;
+  }
+
+img {
+    max-width: 100%;
+    max-height:100%;
+}
+
+li {
+    padding: 5px;
+    padding-right: 10px;
+}
+
+.section {
+    padding: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+
+img.icon {
+  max-height: 300px;
+  max-width: 100px;
+}
+
+img.sketch {
+    max-width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.row-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.column {
+  flex: 50%;
+}
+
+.column-proto {
+    flex: 2 1;
+}
+
+.guide2{
+    width: 95%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.guide {
+    width: 90%;
+    padding: 5%;
+}
+
+
+@media (max-width: 900px){
+    .row{
+        flex-wrap: wrap;
+    }
+
+}
