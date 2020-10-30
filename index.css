@@ -6,7 +6,7 @@ body {
 }
 
 a {
-    color: #456891;
+    color: #008091;
 }
 
 h1 {
@@ -21,9 +21,10 @@ h1 {
  }
 
  h3 {
+     background-color: #A4C6EC;
      color: #008091;
      font-size: 38px;
-     padding-top: 2%;
+     padding: 2%;
      font-family: 'Poppins', sans-serif;
   }
 
@@ -38,6 +39,14 @@ li {
 }
 
 .section {
+    
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.section-color {
+    background-color: #A4C6EC;
+    padding-bottom: 2%;
     padding-right: 5%;
     padding-left: 5%;
 }
